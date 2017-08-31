@@ -28013,7 +28013,7 @@ var Login = function (_React$Component) {
                         _react2.default.createElement(
                             'a',
                             { onClick: this.LoginLanding },
-                            _react2.default.createElement('img', { src: '../images/logo2.png' })
+                            _react2.default.createElement('img', { src: './images/logo2.png' })
                         ),
                         _react2.default.createElement(
                             'div',

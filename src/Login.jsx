@@ -62,7 +62,7 @@ class Login extends React.Component {
         return <div className="loginTemplate">
                     <div className='col-6'>
                       <div className='selectlogin'>    
-                          <a onClick={ this.LoginLanding }><img src='../images/logo2.png' /></a>
+                          <a onClick={ this.LoginLanding }><img src='./images/logo2.png' /></a>
                         <div id="links">  
                           <Link to="/" className="button fb">Sign up</Link>
                           <a onClick={ this.LoadRegister } className="button other">Sign up by use adress E-mail</a>
