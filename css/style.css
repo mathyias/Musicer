@@ -49,6 +49,7 @@
   height: 400px; }
 
 body {
+  font-family: 'Antic Slab', serif;
   /* Let's get this party started */
   /* Handle */ }
   body ::-webkit-scrollbar {
@@ -60,8 +61,15 @@ body {
   body ::-webkit-scrollbar-thumb:window-inactive {
     background: rgba(178, 178, 178, 0.2); }
 
+.link {
+  cursor: pointer; }
+
 .text {
-  color: #00F9FF; }
+  color: #007aff; }
+
+.validation {
+  border-bottom: 1px solid red !important;
+  transition: 1s; }
 
 .center {
   position: absolute;
@@ -75,11 +83,11 @@ body {
   overflow: hidden;
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
-  height: 80%;
-  top: 10%;
+  height: 100%;
+  top: 0;
   left: 0;
   right: 0;
-  bottom: 10%; }
+  bottom: 0; }
 
 .widget {
   height: 400px;
@@ -108,22 +116,35 @@ main .col-8 {
     width: 60%;
     padding: 10px; }
     main .col-8 .landing h1 {
-      font-family: 'Acme', sans-serif;
+      font-family: 'Fira Sans Extra Condensed', sans-serif;
       font-size: 4rem;
-      padding: 5px 0; }
+      padding: 5px 0;
+      text-align: center;
+      letter-spacing: 3px; }
     main .col-8 .landing p {
-      font-family: 'Maven Pro', sans-serif;
+      font-family: 'Antic Slab', serif;
       text-align: center;
       color: white;
       font-size: 20px;
       padding: 5px 0; }
-    main .col-8 .landing button {
-      width: 150px;
+    main .col-8 .landing .accept {
+      margin: 20px 10%;
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      display: block;
+      width: 80%;
       padding: 10px;
-      margin: 20px 30%;
-      border-radius: 5px;
-      border: 1px solid #00F9FF;
-      background-color: white; }
+      clear: both;
+      border-radius: 20px;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Antic Slab', serif; }
+      main .col-8 .landing .accept:hover {
+        border: 2px solid #d7d7d7; }
+  main .col-8 #margin {
+    margin: 10% 0; }
   main .col-8 .loginTemplate .col-6 {
     padding: 20px;
     background: transparent;
@@ -135,8 +156,32 @@ main .col-8 {
         cursor: pointer; }
     main .col-8 .loginTemplate .col-6:last-of-type {
       overflow-y: auto; }
+      main .col-8 .loginTemplate .col-6:last-of-type h1 {
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        text-transform: uppercase; }
+      main .col-8 .loginTemplate .col-6:last-of-type p {
+        text-align: left; }
+      main .col-8 .loginTemplate .col-6:last-of-type .accept {
+        background: transparent;
+        border: 2px solid white;
+        color: white;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 20px 0;
+        clear: both;
+        border-radius: 20px;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Antic Slab', serif; }
+        main .col-8 .loginTemplate .col-6:last-of-type .accept:hover {
+          border: 2px solid #d7d7d7; }
       main .col-8 .loginTemplate .col-6:last-of-type form input {
-        transition: 2s;
+        font-family: 'Antic Slab', serif;
+        transition: 1s;
         outline: none;
         border: none;
         border-bottom: 1px solid #007aff;
@@ -144,10 +189,13 @@ main .col-8 {
         clear: both;
         min-height: 50px;
         background: transparent;
-        margin: 5px 0; }
+        margin: 5px 0;
+        color: white; }
+        main .col-8 .loginTemplate .col-6:last-of-type form input:hover {
+          border-bottom: 1px solid #0055b2; }
         main .col-8 .loginTemplate .col-6:last-of-type form input:focus {
           color: white;
-          transition: 2s;
+          transition: 1s;
           border-bottom: 1px solid white; }
     main .col-8 .loginTemplate .col-6 img {
       margin: 10px auto;
@@ -165,7 +213,8 @@ main .col-8 {
         border-radius: 20px;
         text-decoration: none;
         text-align: center;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        font-family: 'Antic Slab', serif; }
       main .col-8 .loginTemplate .col-6 #links .fb {
         transition: 1s;
         background: #007aff;
@@ -187,7 +236,8 @@ main .col-8 {
       width: 100%;
       text-align: center;
       margin: 10px;
-      line-height: 20px; }
+      line-height: 20px;
+      font-family: 'Antic Slab', serif; }
       main .col-8 .loginTemplate .col-6 p .u {
         color: white;
         text-decoration: none; }
