@@ -1,0 +1,338 @@
+[class*="col-"]{ 
+    
+    background: #cacaca;
+    height: 400px; 
+    
+}
+
+body {
+    
+    font-family: 'Antic Slab', serif;
+    
+
+    /* Let's get this party started */
+::-webkit-scrollbar {
+    width: 6px;
+} 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: rgba(178,178,178,0.2); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(178,178,178,0.2); 
+}
+    
+}
+.link {
+    
+    cursor: pointer;
+    
+}
+
+.text{
+    
+    color: #007aff;
+    
+}
+.validation {
+    
+    border-bottom: 1px solid red !important;
+    transition: 1s;
+    
+}
+.center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.blur { 
+  overflow: hidden;     
+  background: rgba(0,0,0,0.7);
+  position: absolute;   
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.widget {
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+main {
+    
+    video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('../images/bgstart.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+        
+}
+
+    .col-8 {
+        background: nth($color, 4);
+        margin: 0 auto;
+        
+        .landing {
+            
+            margin: 40px auto;
+            width: 60%;
+            padding: 10px;
+            
+            h1 {
+                font-family: 'Fira Sans Extra Condensed', sans-serif;
+                font-size: 4rem;
+                padding: 5px 0;
+                text-align: center;
+                letter-spacing: 3px;
+                
+            }
+            p {
+                font-family: 'Antic Slab', serif;
+                text-align: center;
+                color: white;
+                font-size: 20px;
+                padding: 5px 0;
+            }
+            .accept {
+                margin: 20px 10%;
+                background: transparent;
+                border: 2px solid white;
+                color: white;
+                display: block;
+                width: 80%;
+                padding: 10px;
+                clear: both;
+                border-radius: 20px;
+                text-decoration: none;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: 'Antic Slab', serif;
+                
+                &:hover {
+                        
+                        border: 2px solid #d7d7d7;
+                        
+                    }
+                
+            }
+            
+        }
+        
+        #margin {
+                
+                margin: 10% 0;
+                
+            }
+        
+        .loginTemplate {
+            
+            
+            
+            .col-6 {
+                &:first-of-type {
+                    
+                    a {
+                        cursor: pointer;
+                    } 
+                    
+                        border-right: 1px solid #007aff;
+                        margin: 0 auto;
+                        
+                    }
+                &:last-of-type {
+                        
+                         overflow-y: auto;
+                        
+                    h1{
+                        
+                        text-align: center;
+                        color: white;
+                        font-size: 40px;
+                        text-transform: uppercase;
+                    }
+                    
+                    p{ 
+                    
+                        text-align: left;
+                        
+                    }
+                    
+                    
+                    
+                    .accept {
+                        
+                        background: transparent;
+                        border: 2px solid white;
+                        color: white;
+                        display: block;
+                        width: 100%;
+                        padding: 10px;
+                        margin: 20px 0;
+                        clear: both;
+                        border-radius: 20px;
+                        text-decoration: none;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-family: 'Antic Slab', serif;
+                    
+                    &:hover {
+                        
+                        border: 2px solid #d7d7d7;
+                        
+                    }
+                        
+                    }
+
+                    form{
+                        
+                        input {
+                            
+                        font-family: 'Antic Slab', serif;    
+                        transition: 1s;    
+                        outline: none;     
+                        border: none;
+                        border-bottom: 1px solid #007aff; 
+                        width: 100%;
+                        clear: both;
+                        min-height: 50px;
+                        background: transparent;
+                        margin: 5px 0; 
+                        color: white;  
+                            
+                            &:hover {
+                                
+                               border-bottom: 1px solid #0055b2; 
+                                
+                            }
+                        
+                            
+                            &:focus {
+                                
+                                color: white;
+                                transition: 1s;
+                                border-bottom: 1px solid white;
+                                
+                                
+                                
+                            }
+                            
+                            
+                    }
+                        
+                        
+                    }
+                    
+           
+                    }
+                
+                img {
+                    
+                    margin: 10px auto;
+                    display: block;
+                    width: 268px;
+                    height: 80px;
+                }
+                
+                #links {
+                    
+                    width: 100%;
+                    
+                .button {
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    margin: 20px 0;
+                    clear: both;
+                    border-radius: 20px;
+                    text-decoration: none;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-family: 'Antic Slab', serif;
+                }
+                   
+                    
+                .fb {
+                        transition: 1s; 
+                        background: #007aff;
+                        border: 1px solid #007aff;
+                        color: white;
+                    
+                    &:hover {
+                        transition: 1s; 
+                        background: #0055b2;
+                        border: 1px solid #0055b2;
+                        
+                    }
+                        
+                    }
+                .other {
+                        
+                        background: transparent;
+                        border: 2px solid white;
+                        color: white;
+                    
+                    &:hover {
+                        
+                        border: 2px solid #d7d7d7;
+                        
+                    }
+                    
+                        
+                    }
+                }
+                p {
+                    color: #007aff;
+                    font-size: 15px;
+                    width: 100%;
+                    text-align: center;
+                    margin: 10px;
+                    line-height: 20px;
+                    font-family: 'Antic Slab', serif;
+                    
+                    .u {
+                        
+                        color: white;
+                        text-decoration: none;
+                        
+                        &:hover {
+                            
+                            text-decoration: underline;
+                            
+                        }
+                        
+                    }
+                    
+                }
+                .space {
+                    
+                    border-bottom: 1px solid white;
+                    width: 50px;
+                    margin: 30px auto;
+                    
+                }
+            padding: 20px;
+            background: transparent;
+            float: left;
+                
+            }
+
+            
+        }
+        
+    }
+}
