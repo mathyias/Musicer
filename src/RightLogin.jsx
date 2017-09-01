@@ -1,7 +1,13 @@
 import React from 'react';
 import { Router,
+Route,
 Link,
+IndexLink,
+IndexRoute,
+hashHistory,
+withRouter        
 } from 'react-router';
+import NotFound from './NotFound.jsx';
 
 class RightLogin extends React.Component {
     
@@ -44,11 +50,36 @@ class RightLogin extends React.Component {
     Send = () => {
         
        event.preventDefault(); 
+        
+        
         this.setState({
-            send: true
+            
+            clicked: true
+            
+            
         })
         
+        if(this.state.text.length && this.state.password.length){
+            
+            this.setState({
+            send: true
+        })
+            
+            this.props.router.push('/browse')
+            
+            const session = [
+                              {
+                                value: this.state.text,
+                                password: this.state.password  
+                              }
+                            ]
+            sessionStorage.setItem('logged', JSON.stringify(session));
+            
+            
+        }
+        
     }
+        
     
     
     render() {
@@ -58,8 +89,8 @@ class RightLogin extends React.Component {
                 <h1>LOG IN</h1>
             
                     <form className='register'>
-                        <input type="text" placeholder="Username or E-mail" className={ (this.state.send && !this.state.text)?'validation':'' } value={ this.state.text } onChange={ this.Username }/>
-                        <input type="password" placeholder="Password" className={ (this.state.send && !this.state.password)?'validation':''  } value={ this.state.password } onChange={ this.Password } />
+                        <input type="text" placeholder="Username or E-mail" className={ (this.state.clicked && !this.state.text)?'validation':'' } value={ this.state.text } onChange={ this.Username }/>
+                        <input type="password" placeholder="Password" className={ (this.state.clicked && !this.state.password)?'validation':''  } value={ this.state.password } onChange={ this.Password } />
                         <a className="accept link" onClick={ this.Send }>LOG IN</a>
                     </form>                                  
                     
@@ -68,4 +99,4 @@ class RightLogin extends React.Component {
     }
     
 }
-module.exports = RightLogin;
+module.exports = withRouter(RightLogin);

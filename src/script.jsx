@@ -11,6 +11,7 @@ import Start from './Start.jsx';
 import Login from './Login.jsx';
 import NotFound from './NotFound.jsx';
 import Register from './Register.jsx';
+import Browse from './Browse.jsx';
 
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -32,13 +33,15 @@ document.addEventListener('DOMContentLoaded', function(){
         
 	render(){
             
-            return <div className="container">
-                        <div className="row">
-                            <div className="col-8">
+            return <div className="widget center">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-8">
                                    {this.props.children}
+                                </div>
                             </div>
                         </div>
-                    </div>
+                   </div>
 
 }	
 
@@ -54,6 +57,10 @@ document.addEventListener('DOMContentLoaded', function(){
                             <IndexRoute component={Start} />
                             <Route path='/login' component={Login} />
                             <Route path='/register' component={Register} />
+                        </Route>    
+                        <Route path='/browse' component={Browse} >
+                            <IndexRoute component={Start} />
+                            <Route path='/browse/featured' component={NotFound} />
                         </Route>
                         <Route path='*' component={NotFound} />
                    </Router>;
