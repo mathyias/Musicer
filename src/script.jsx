@@ -12,7 +12,7 @@ import Login from './Login.jsx';
 import NotFound from './NotFound.jsx';
 import Register from './Register.jsx';
 import Browse from './Browse.jsx';
-
+import Account from './Account.jsx';
 
 document.addEventListener('DOMContentLoaded', function(){
     
@@ -59,8 +59,8 @@ document.addEventListener('DOMContentLoaded', function(){
                             <Route path='/register' component={Register} />
                         </Route>    
                         <Route path='/browse' component={Browse} >
-                            <IndexRoute component={Start} />
-                            <Route path='/browse/featured' component={NotFound} />
+                            <IndexRoute component={NotFound} />
+                            <Route path='/browse/account' component={Account} />
                         </Route>
                         <Route path='*' component={NotFound} />
                    </Router>;

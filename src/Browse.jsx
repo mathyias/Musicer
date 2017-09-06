@@ -47,31 +47,20 @@ class Browse extends React.Component {
             
             return <div className="container">
                         <div className="row">
-                            <div className="topbar">
-                                   <div className='slogan'><img src='./images/logo2.png' /></div>
-                                   <div className='menu'></div>
-                                   <div className='account'>
-                                        <div className='circle'>
-                                            <img src='./images/circle.jpg' />
-                                            <div className='circlesmall'>
-                                                <a onClick={ this.Logout }><img src='./images/settings.svg' /></a>
-                                            </div>
-                                        </div>
-                                   </div>
+                            <div className='rightbar'>
+                                <div className='right-logo'>
+                                    <Link to='/browse'><img src='./images/logo-browse.png' /></Link>
+                                </div>
+                                <div className='menu-right'></div>
+                                <div className='right-account'>
+                                    <Link to='/browse/account'><img src='./images/circle.jpg' /></Link>
+                                </div>
+                                    <Link to="/" onClick={ this.Logout } className="logout">Log Out</Link>
                             </div>
-                              <div className="leftbar">
-                                <circle>
-                                   <div className='circle'>
-                                        <img src='./images/album.png' />
-                                   </div>
-                                </circle>      
+                            <div className='leftbar'>
                                    
                             </div>
-                            <div className="bottombar">
-                                <p className='right'>Copyright© Musicer 2017</p>
-                                <p className='left'>Contact | Web Design Tips & Tools | Terms of Use & Privacy | Link to Us</p>
-                            </div>
-                            
+            
                                 {this.props.children}
                             
                         </div>
