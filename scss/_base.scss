@@ -1,47 +1,47 @@
-[class*="col-"]{ 
-    
+[class*="col-"]{
+
     background: #cacaca;
-    height: 400px; 
-    
+    height: 400px;
+
 }
 
 body {
-    
+
     font-family: 'Antic Slab', serif;
-    
-    
+
+
 
     /* Let's get this party started */
 ::-webkit-scrollbar {
     width: 6px;
-} 
+}
 /* Handle */
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    background: rgba(178,178,178,0.2); 
+    background: rgba(178,178,178,0.2);
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(178,178,178,0.2); 
+	background: rgba(178,178,178,0.2);
 }
-    
+
 }
 .link {
-    
+
     cursor: pointer;
-    
+
 }
 
 .text{
-    
+
     color: #007aff;
-    
+
 }
 .validation {
-    
+
     border-bottom: 1px solid red !important;
     transition: 1s;
-    
+
 }
 .center {
   position: absolute;
@@ -51,10 +51,10 @@ body {
   left: 0;
   right: 0;
 }
-.blur { 
-  overflow: hidden;     
+.blur {
+  overflow: hidden;
   background: rgba(0,0,0,0.7);
-  position: absolute;   
+  position: absolute;
   height: 100%;
   top: 0;
   left: 0;
@@ -67,8 +67,8 @@ body {
   overflow: hidden;
 }
 main {
-    
-    video { 
+
+    video {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -81,26 +81,26 @@ main {
     background: url('../images/bgstart.jpg') no-repeat;
     background-size: cover;
     transition: 1s opacity;
-        
+
 }
 
     .col-8 {
         background: nth($color, 4);
         margin: 0 auto;
-        
+
         .landing {
-            
+
             margin: 40px auto;
             width: 60%;
             padding: 10px;
-            
+
             h1 {
                 font-family: 'Fira Sans Extra Condensed', sans-serif;
                 font-size: 4rem;
                 padding: 5px 0;
                 text-align: center;
                 letter-spacing: 3px;
-                
+
             }
             p {
                 font-family: 'Antic Slab', serif;
@@ -123,60 +123,60 @@ main {
                 text-align: center;
                 text-transform: uppercase;
                 font-family: 'Antic Slab', serif;
-                
+
                 &:hover {
-                        
+
                         border: 2px solid #d7d7d7;
-                        
+
                     }
-                
+
             }
-            
+
         }
-        
+
         #margin {
-                
+
                 margin: 10% 0;
-                
+
             }
-        
+
         .loginTemplate {
-            
-            
-            
+
+
+
             .col-6 {
                 &:first-of-type {
-                    
+
                     a {
                         cursor: pointer;
-                    } 
-                    
+                    }
+
                         border-right: 1px solid #007aff;
                         margin: 0 auto;
-                        
+
                     }
                 &:last-of-type {
-                        
-                         overflow-y: auto;  
-                        
+
+                         overflow-y: auto;
+
                     h1{
-                        
+
                         text-align: center;
                         color: white;
                         font-size: 40px;
                         text-transform: uppercase;
                     }
-                    
-                    p{ 
-                    
+
+                    p{
+
                         text-align: left;
-                        
+
                     }
-                    
-                    
-                    
+
+
+
                     .accept {
-                        
+
                         background: transparent;
                         border: 2px solid white;
                         color: white;
@@ -190,69 +190,69 @@ main {
                         text-align: center;
                         text-transform: uppercase;
                         font-family: 'Antic Slab', serif;
-                    
+
                     &:hover {
-                        
+
                         border: 2px solid #d7d7d7;
-                        
+
                     }
-                        
+
                     }
 
                     form{
-                        
+
                         input {
-                            
-                        font-family: 'Antic Slab', serif;    
-                        transition: 1s;    
-                        outline: none;     
+
+                        font-family: 'Antic Slab', serif;
+                        transition: 1s;
+                        outline: none;
                         border: none;
-                        border-bottom: 1px solid #007aff; 
+                        border-bottom: 1px solid #007aff;
                         width: 100%;
                         clear: both;
                         min-height: 50px;
                         background: transparent;
-                        margin: 5px 0; 
-                        color: white;  
-                            
+                        margin: 5px 0;
+                        color: white;
+
                             &:hover {
-                                
-                               border-bottom: 1px solid #0055b2; 
-                                
+
+                               border-bottom: 1px solid #0055b2;
+
                             }
-                        
-                            
+
+
                             &:focus {
-                                
+
                                 color: white;
                                 transition: 1s;
                                 border-bottom: 1px solid white;
-                                
-                                
-                                
+
+
+
                             }
-                            
-                            
+
+
                     }
-                        
-                        
+
+
                     }
-                    
-           
+
+
                     }
-                
+
                 img {
-                    
+
                     margin: 10px auto;
                     display: block;
                     width: 268px;
                     height: 80px;
                 }
-                
+
                 #links {
-                    
+
                     width: 100%;
-                    
+
                 .button {
                     display: block;
                     width: 100%;
@@ -265,35 +265,35 @@ main {
                     text-transform: uppercase;
                     font-family: 'Antic Slab', serif;
                 }
-                   
-                    
+
+
                 .fb {
-                        transition: 1s; 
+                        transition: 1s;
                         background: #007aff;
                         border: 1px solid #007aff;
                         color: white;
-                    
+
                     &:hover {
-                        transition: 1s; 
+                        transition: 1s;
                         background: #0055b2;
                         border: 1px solid #0055b2;
-                        
+
                     }
-                        
+
                     }
                 .other {
-                        
+
                         background: transparent;
                         border: 2px solid white;
                         color: white;
-                    
+
                     &:hover {
-                        
+
                         border: 2px solid #d7d7d7;
-                        
+
                     }
-                    
-                        
+
+
                     }
                 }
                 p {
@@ -304,99 +304,116 @@ main {
                     margin: 10px;
                     line-height: 20px;
                     font-family: 'Antic Slab', serif;
-                    
+
                     .u {
-                        
+
                         color: white;
                         text-decoration: none;
-                        
+
                         &:hover {
-                            
+
                             text-decoration: underline;
-                            
+
                         }
-                        
+
                     }
-                    
+
                 }
                 .space {
-                    
+
                     border-bottom: 1px solid white;
                     width: 50px;
                     margin: 30px auto;
-                    
+
                 }
             padding: 20px;
             background: transparent;
             float: left;
-                
+
             }
 
-            
+
         }
-        
+
     }
 }
 .rightbar {
-    
+
     background: rgba(0,0,0,0.7);
     height: 100vh;
     width: 110px;
     float: right;
     padding: 10px;
     position: relative;
-    padding-bottom: 100px;
-    
-    
+
+
     .right-logo{
-        
+
        width: 64px;
        height: 64px;
         margin: 10px auto;
         display: block;
-            
+
         img{
             width: 64px;
             height: 64px;
         }
-        
-        
+
+
     }
-    
+
     .menu-right {
-            
+
             width: 100%;
-            height: 70vh;;
+            max-height: 100vh;;
             background: transparent;
             margin: 20px auto;
             padding: 10px;
-            border-top: 1px solid white;
-            border-bottom: 1px solid white;
+
         }
-    
+
+  .Settings {
+
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+  padding: 5px;
+  left: 0;
+  right: 0;
+  margin: 5px;
+  display: block;
+
+
+
+
+
+
     .right-account{
-        
+
        width: 48px;
        height: 48px;
-        margin: 20px auto;
+       margin: 20px auto;
         display: block;
-        
+
         img {
             width: 48px;
             height: 48px;
             border: 2px solid white;
-            
+
             &:hover {
-                
+
                 border: 2px solid #007aff;
-                
+
             }
         }
-        
+
+
+      }
+
     }
-        
+
         .logout {
-                        
+
                         background: transparent;
                         border: 1px solid white;
                         color: white;
@@ -410,30 +427,30 @@ main {
                         text-align: center;
                         text-transform: uppercase;
                         font-family: 'Antic Slab', serif;
-                    
+
                     &:hover {
-                        
+
                         border: 1px solid #007aff;
                         color: #007aff;
-                        
+
                     }
-                        
+
         }
-        
-    
+
+
 }
 
 .leftbar {
-    
+
     height: 100vh;
     width: 15vw;
     background: rgba(0,0,0,0.7);
     float: left;
-    
+
 }
 
 .gradient {
-    
+
 background: -moz-linear-gradient(89deg, rgba(0,0,0,1) 8%, rgba(135,53,26,1) 57%, rgba(255,100,50,1) 100%); /* ff3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,100,50,1)), color-stop(43%, rgba(135,53,26,1)), color-stop(92%, rgba(0,0,0,1))); /* safari4+,chrome */
 background: -webkit-linear-gradient(89deg, rgba(0,0,0,1) 8%, rgba(135,53,26,1) 57%, rgba(255,100,50,1) 100%); /* safari5.1+,chrome10+ */
@@ -441,5 +458,5 @@ background: -o-linear-gradient(89deg, rgba(0,0,0,1) 8%, rgba(135,53,26,1) 57%, r
 background: -ms-linear-gradient(89deg, rgba(0,0,0,1) 8%, rgba(135,53,26,1) 57%, rgba(255,100,50,1) 100%); /* ie10+ */
 background: linear-gradient(1deg, rgba(0,0,0,1) 8%, rgba(135,53,26,1) 57%, rgba(255,100,50,1) 100%); /* w3c */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF6432', endColorstr='#000000',GradientType=0 ); /* ie6-9 */
-    
+
 }

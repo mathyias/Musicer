@@ -1,35 +1,31 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 .container {
     width: 100%;
     max-width: $gridContainer;
-    .row {
-        
-        
-        
+
         @extend %clearfix;
-        
+
         [class*="col-"]{
             width: 100%;
-            
+
             @media (min-width: $breakPoint){
-                width: 100% / $gridColums; 
+                width: 100% / $gridColums;
                 margin: 0 auto;
             }
         }
-        
+
         @media (min-width: $breakPoint){
-            
+
             @for $i from 1 through $gridColums{
             .col-#{$i}{
                 width: (100% / $gridColums) * $i;
             }
+
         }
-            
-        }
-          
+
     }
-}  
+}
