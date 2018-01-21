@@ -55,7 +55,7 @@ class Browse extends React.Component {
                                     <Link to='/browse'><img src='./images/logo-browse.png' /></Link>
                                 </div>
                                 <div className='menu-right'></div>
-                            <div  className='Settings'>
+                            <div  className='settings'>
                                 <div className='right-account'>
                                     <Link to='/browse/account'><img src='./images/circle.jpg' /></Link>
                                 </div>
