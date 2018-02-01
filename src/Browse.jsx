@@ -17,7 +17,6 @@ class Browse extends React.Component {
 
         // pobranie wartosci
         const div = $('#app');
-        const bgvideo = $('source');
 
         const getSession = sessionStorage.getItem('logged');
         const sessionValue = $.parseJSON(getSession);
@@ -27,7 +26,6 @@ class Browse extends React.Component {
         if (getSession != null) {
 
             div.addClass('gradient');
-            bgvideo.remove();
 
           }
     }
@@ -63,7 +61,15 @@ class Browse extends React.Component {
                             </div>
                           </div>
                             <div className='leftbar'>
+                              <div className='leftbar-sound'>
 
+
+                                <div className='leftbar-sound-name'></div>
+                                <div className='leftbar-sound-album'></div>
+                                <div className='leftbar-sound-player'></div>
+
+
+                              </div>
                             </div>
 
                                 {this.props.children}
