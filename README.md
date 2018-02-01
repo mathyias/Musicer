@@ -1,7 +1,7 @@
 # Welcome to Musicer(alpha)!
 
 This is a new project for beginners. Im create this project and he is tetsted. i dont know when **Musicer** have a ready for donwloads!
-**Musicer ver.1.4.7 (Alpha)** 
+**Musicer ver.2.0.X (Alpha)** 
 
 # Synchronization
 
